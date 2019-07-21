@@ -26,5 +26,5 @@ def postMovieClip(app):
                                 img=imgFile.filename, info=info)
 
         return jsonify({
-            "videoUrl": str(get_host_ip()) + ':8000/static/product/' + videoUrl
+            "videoUrl":'http://39.106.128.53:8000/static/product/' + videoUrl
         })

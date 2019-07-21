@@ -7,7 +7,7 @@ import time
 
 def movieClip(*, mp4, img, info):
     img = ImageSequenceClip(
-        [rootPath('../uploads/' + img)], fps=.5).subclip(0, 20)
+        [rootPath('../uploads/' + img)], fps=.5).subclip(0, 10)
     w = img.size[0]
     h = img.size[1]
     y = info['position']['top'] * (w / 500)
